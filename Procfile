@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar target/Module3-1.0-SNAPSHOT.jar
