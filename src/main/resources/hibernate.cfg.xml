@@ -9,8 +9,8 @@
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">postgres</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Module3</property>
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/module3</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">false</property>
 
         <property name="connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
@@ -23,10 +23,11 @@
         <property name="hibernate.c3p0.acquireRetryAttempts">1</property>
         <property name="hibernate.c3p0.acquireRetryDelay">250</property>
 
-<!--        <mapping class="com.nixal.ssobchenko.model.vehicle.Car"/>-->
-<!--        <mapping class="com.nixal.ssobchenko.model.vehicle.Bus"/>-->
-<!--        <mapping class="com.nixal.ssobchenko.model.vehicle.Motorcycle"/>-->
-<!--        <mapping class="com.nixal.ssobchenko.model.vehicle.Invoice"/>-->
+        <mapping class="com.ssobchenko.model.Student"/>
+        <mapping class="com.ssobchenko.model.Subject"/>
+        <mapping class="com.ssobchenko.model.Lecturer"/>
+        <mapping class="com.ssobchenko.model.Group"/>
+        <mapping class="com.ssobchenko.model.Grade"/>
 
     </session-factory>
 </hibernate-configuration>
