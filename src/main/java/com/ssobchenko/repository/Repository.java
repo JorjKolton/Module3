@@ -10,6 +10,7 @@ import org.hibernate.SessionFactory;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -96,7 +97,7 @@ public class Repository {
     }
 
     public Map<Student, String> getStudentsWithAverageGradeBiggerThan(int grade) {
-        Map<Student, String> result = new HashMap<>();
+        Map<Student, String> result = new LinkedHashMap<>();
         Session session = sessionFactory.openSession();
         Query query = session.createSQLQuery("SELECT student_id, AVG(value) FROM grades Group by student_id " +
                 "having AVG(value) > :grade ORDER BY AVG(value)");
