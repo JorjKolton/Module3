@@ -2,10 +2,6 @@
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-K
-src/flywayConfig.properties,3/a/3a87adddaecd2fe0a495c042292337c6cd352daf
-A
-system.properties,a/5/a5db35984da8ffa0e255c16a2e31ae7b26e7d222
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 _
